@@ -1,10 +1,16 @@
-# Getting Started with Create React App
+# My Posts App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+It supports two routes, `/posts` and `/post/:id` where `:id` is a number between 1 and 100.
 
-## Available Scripts
+## Running | Building | Deploying | Testing
 
-In the project directory, you can run:
+The project comes pre-built. The deployment files are in the `build` folder.\
+The easies way to run the app in a Node.js environment is to use [serve](https://www.npmjs.com/package/serve).\
+Run `npx serve -s build` in the project root. This will serve files from the `build` folder,\
+rewriting all requests to non-existent resources, allowing for HTML5 pushState-based client-side routing.
+
+To see how to run the app interactively, rebuild it or deploy in another way, please check out the following:
 
 ### `npm start`
 
@@ -14,9 +20,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+### `npm test` | `npm test -- --coverage`
 
-Launches the test runner in the interactive watch mode.\
+`npm test` launches the test runner in the interactive watch mode.\
+`npm test -- --coverage` launches the test runner in the interactive watch mode with coverage display.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
@@ -25,22 +32,11 @@ Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The app is ready to be deployed.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The easiest way to server it in a Node.js environment is by using [serve](https://www.npmjs.com/package/serve).\
+After running `npm run build` in the project root, run `npx serve -s build` in the same folder.\
+This will serve files from the `build` folder, rewriting all requests to non-existent
+resources, allowing for HTML5 pushState-based client-side routing.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+For details on possible methods of deployment, please see the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.

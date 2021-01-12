@@ -1,0 +1,40 @@
+.comment {
+  font-size: 0.8em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.comment:first-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.comment:last-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.comment .body .label {
+  display: none;
+}
+.comment > div {
+  font-size: 0.8em;
+}
+.comment .label {
+  font-variant: small-caps;
+  text-transform: initial;
+}
+.comment .body {
+  font-size: inherit;
+}
+
+.comment .name {
+  text-transform: capitalize;
+}
+
+.comment .body::first-letter {
+  text-transform: uppercase;
+}
+.comment .label::after {
+  content: " ";
+}

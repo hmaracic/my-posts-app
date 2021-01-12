@@ -1,0 +1,33 @@
+.search-bar {
+  padding: 5px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: hsl(351, 57%, 92%);
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+}
+
+.search-bar .label {
+  flex-shrink: 0;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  align-self: center;
+  height: 100%;
+  margin-left: 3px;
+  background-color: hsl(351, 57%, 96%);
+  border: none;
+  padding: 0px 2px;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  outline: none;
+  transition: background-color 0.5s ease-out;
+}
+
+.search-bar input:focus {
+  background-color: white;
+}

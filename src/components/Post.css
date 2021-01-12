@@ -1,0 +1,26 @@
+.post .body .label {
+  display: none;
+}
+
+.post .label {
+  display: none;
+  font-variant: small-caps;
+  text-transform: initial;
+}
+
+.post .name {
+  font-variant: small-caps;
+}
+
+.post .title {
+  text-transform: capitalize;
+  font-size: 1.1em;
+}
+
+.post .body::first-letter {
+  text-transform: uppercase;
+}
+
+.post .label::after {
+  content: " ";
+}

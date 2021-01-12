@@ -1,0 +1,10 @@
+.post-comments-ctr {
+  padding: 10px 10px;
+}
+
+.comments-container {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px 5px;
+  background-color: hsl(208, 100%, 95%);
+}
